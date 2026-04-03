@@ -1,0 +1,26 @@
+<form (ngSubmit)="calculateEMI()">
+
+  <!-- Loan Amount -->
+  <label for="loanAmount"><h2>Loan Amount</h2></label>
+  <input type="number"
+         [(ngModel)]="loanAmount"
+         id="loanAmount"
+         name="loanAmount">
+
+  <!-- Interest Rate -->
+  <label for="interestRate"><h2>Interest Rate</h2></label>
+  <input type="number"
+         [(ngModel)]="interestRate"
+         id="interestRate"
+         name="interestRate">
+
+  <!-- Tenure -->
+  <label for="tenure"><h2>Tenure (Years)</h2></label>
+  <input type="number"
+         [(ngModel)]="tenure"
+         id="tenure"
+         name="tenure">
+
+  <button type="submit"><h2>Calculate</h2></button>
+
+</form>
